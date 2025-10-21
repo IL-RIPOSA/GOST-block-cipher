@@ -1,0 +1,1930 @@
+vsim -gui work.mux2to1
+# vsim -gui work.mux2to1 
+# Start time: 15:23:25 on Mar 02,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mux2to1(rtl)
+add wave -position insertpoint  \
+sim:/mux2to1/in1 \
+sim:/mux2to1/in2 \
+sim:/mux2to1/s \
+sim:/mux2to1/oupu
+force -freeze sim:/mux2to1/in1 x\"10256786\" 0
+force -freeze sim:/mux2to1/in2 x\"abc15254\" 0
+noforce sim:/mux2to1/s
+force -freeze sim:/mux2to1/s 1 0
+run
+force -freeze sim:/mux2to1/s 0 0
+run
+quit -sim
+# End time: 15:24:53 on Mar 02,2022, Elapsed time: 0:01:28
+# Errors: 0, Warnings: 0
+# Compile of RAM .vhd failed with 4 errors.
+# Compile of RAM .vhd failed with 3 errors.
+# Compile of RAM .vhd failed with 3 errors.
+# Compile of RAM .vhd failed with 1 errors.
+# Compile of RAM .vhd was successful.
+# Compile of FSM.vhd was successful.
+# Compile of RAM .vhd was successful.
+# Compile of final_RoadRunneR.vhd failed with 6 errors.
+# Compile of final_RoadRunneR.vhd failed with 3 errors.
+# Compile of final_RoadRunneR.vhd was successful.
+vsim -gui work.final_roadrunner
+# vsim -gui work.final_roadrunner 
+# Start time: 16:48:38 on Mar 02,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.final_roadrunner(rtl)
+# ** Warning: (vsim-3473) Component instance "fsm_i : FSM" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /final_roadrunner File: C:/Users/pc/Desktop/Rodrunner/final_RoadRunneR.vhd
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.f(rtl)
+# Loading work.slk(rtl)
+# Loading work.s_box_32(rtl)
+# Loading work.s_box(rtl)
+# Loading work.diffusion_32_l(rtl)
+# Loading work.l(rtl)
+add wave -position insertpoint  \
+sim:/final_roadrunner/clk \
+sim:/final_roadrunner/rst \
+sim:/final_roadrunner/new_key \
+sim:/final_roadrunner/new_data \
+sim:/final_roadrunner/enc_dec \
+sim:/final_roadrunner/plaintext \
+sim:/final_roadrunner/key \
+sim:/final_roadrunner/ciphertext \
+sim:/final_roadrunner/busy \
+sim:/final_roadrunner/key_ready \
+sim:/final_roadrunner/finish \
+sim:/final_roadrunner/en_ent \
+sim:/final_roadrunner/sel_in \
+sim:/final_roadrunner/rd \
+sim:/final_roadrunner/rw \
+sim:/final_roadrunner/init \
+sim:/final_roadrunner/r1 \
+sim:/final_roadrunner/r2 \
+sim:/final_roadrunner/rounds \
+sim:/final_roadrunner/address \
+sim:/final_roadrunner/sel_out \
+sim:/final_roadrunner/key_ready_fsm \
+sim:/final_roadrunner/finish_end_fsm \
+sim:/final_roadrunner/busy_fsm \
+sim:/final_roadrunner/plaintext_rd \
+sim:/final_roadrunner/ciphertext_rd \
+sim:/final_roadrunner/init_wk \
+sim:/final_roadrunner/final_wk \
+sim:/final_roadrunner/round_key
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+quit -sim
+# End time: 17:00:45 on Mar 02,2022, Elapsed time: 0:12:07
+# Errors: 0, Warnings: 1
+# Compile of FSM.vhd was successful.
+# Compile of rrr_tb.vhd failed with 3 errors.
+# Compile of rrr_tb.vhd was successful.
+vsim -gui work.roadrunner_tb
+# vsim -gui work.roadrunner_tb 
+# Start time: 17:03:38 on Mar 02,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.roadrunner_tb(sim)
+# Loading ieee.numeric_std(body)
+# Loading work.final_roadrunner(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.f(rtl)
+# Loading work.slk(rtl)
+# Loading work.s_box_32(rtl)
+# Loading work.s_box(rtl)
+# Loading work.diffusion_32_l(rtl)
+# Loading work.l(rtl)
+# ** Warning: (vsim-8683) Uninitialized out port /roadrunner_tb/rrr_tb/busy has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /roadrunner_tb/rrr_tb/key_ready has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /roadrunner_tb/rrr_tb/finish has no driver.
+# This port will contribute value (U) to the signal network.
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 30 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 30 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 30 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 30 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 30 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 30 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 30 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 30 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 30 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 30 ns.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 30 ns.
+quit -sim
+# End time: 17:10:49 on Mar 02,2022, Elapsed time: 0:07:11
+# Errors: 11, Warnings: 3
+vsim -gui work.fsm
+# vsim -gui work.fsm 
+# Start time: 17:10:59 on Mar 02,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fsm(rtl)
+force -freeze sim:/fsm/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/fsm/rst 1 0
+run
+force -freeze sim:/fsm/new_data 1 0
+force -freeze sim:/fsm/new_key 1 0
+force -freeze sim:/fsm/enc_dec 1 0
+run
+run
+# Compile of final_RoadRunneR.vhd was successful.
+# Compile of FSM.vhd was successful.
+run
+force -freeze sim:/fsm/rst 0 0
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 40300 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 40300 ps.
+quit -sim
+# End time: 17:39:45 on Mar 02,2022, Elapsed time: 0:28:46
+# Errors: 2, Warnings: 0
+# Compile of FSM.vhd was successful.
+vsim -gui work.fsm
+# vsim -gui work.fsm 
+# Start time: 19:08:30 on Mar 02,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fsm(rtl)
+add wave -position insertpoint  \
+sim:/fsm/clk \
+sim:/fsm/rst \
+sim:/fsm/new_data \
+sim:/fsm/new_key \
+sim:/fsm/enc_dec \
+sim:/fsm/en_ent \
+sim:/fsm/sel_in \
+sim:/fsm/rd \
+sim:/fsm/rw \
+sim:/fsm/init \
+sim:/fsm/r1 \
+sim:/fsm/r2 \
+sim:/fsm/sel_out \
+sim:/fsm/key_ready \
+sim:/fsm/finish_end \
+sim:/fsm/busy \
+sim:/fsm/curr_state \
+sim:/fsm/next_state
+force -freeze sim:/fsm/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/fsm/rst 1 0
+run
+force -freeze sim:/fsm/rst 0 0
+force -freeze sim:/fsm/new_data x 0
+force -freeze sim:/fsm/new_data 1 0
+force -freeze sim:/fsm/new_key 1 0
+force -freeze sim:/fsm/enc_dec 1 0
+run
+run
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 400 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 400 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 400 ps.
+restart -f
+force -freeze sim:/fsm/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/fsm/rst 1 0
+run
+force -freeze sim:/fsm/rst 0 0
+force -freeze sim:/fsm/new_data x 0
+force -freeze sim:/fsm/new_data 1 0
+force -freeze sim:/fsm/new_key 1 0
+force -freeze sim:/fsm/enc_dec 1 0
+run
+run
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 400 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 400 ps.
+# Compile of FSM.vhd was successful.
+restart -f
+force -freeze sim:/fsm/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/fsm/rst 1 0
+run
+# Loading work.fsm(rtl)
+force -freeze sim:/fsm/rst 0 0
+force -freeze sim:/fsm/new_data x 0
+force -freeze sim:/fsm/new_data 1 0
+force -freeze sim:/fsm/new_key 1 0
+force -freeze sim:/fsm/enc_dec 1 0
+run
+run
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 400 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 400 ps.
+# Compile of FSM.vhd failed with 8 errors.
+# Compile of FSM.vhd failed with 8 errors.
+# Compile of FSM.vhd failed with 4 errors.
+# Compile of FSM.vhd failed with 2 errors.
+# Compile of FSM.vhd was successful.
+restart -f
+force -freeze sim:/fsm/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/fsm/rst 1 0
+run
+# Loading work.fsm(rtl)
+# Loading work.fsm(rtl)
+force -freeze sim:/fsm/rst 0 0
+force -freeze sim:/fsm/new_data x 0
+force -freeze sim:/fsm/new_data 1 0
+force -freeze sim:/fsm/new_key 1 0
+force -freeze sim:/fsm/enc_dec 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of FSM.vhd was successful.
+restart -f
+# Loading work.fsm(rtl)
+force -freeze sim:/fsm/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/fsm/rst 1 0
+run
+# Loading work.fsm(rtl)
+# Loading work.fsm(rtl)
+force -freeze sim:/fsm/rst 0 0
+force -freeze sim:/fsm/new_data x 0
+force -freeze sim:/fsm/new_data 1 0
+force -freeze sim:/fsm/new_key 1 0
+force -freeze sim:/fsm/enc_dec 1 0
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 00:02:12 on Mar 03,2022, Elapsed time: 4:53:42
+# Errors: 0, Warnings: 0
+vsim -gui work.roadrunner_tb
+# vsim -gui work.roadrunner_tb 
+# Start time: 00:02:37 on Mar 03,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.roadrunner_tb(sim)
+# Loading ieee.numeric_std(body)
+# Loading work.final_roadrunner(rtl)
+# Loading work.fsm(rtl)
+# ** Error: (vsim-3732) C:/Users/pc/Desktop/Rodrunner/final_RoadRunneR.vhd(83): No default binding for component instance 'fsm_i'.
+#    The following component ports are not on the entity:
+#           address
+#           rounds
+#    Time: 0 ps  Iteration: 0  Instance: /roadrunner_tb/rrr_tb/fsm_i File: C:/Users/pc/Desktop/Rodrunner/FSM.vhd
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.f(rtl)
+# Loading work.slk(rtl)
+# Loading work.s_box_32(rtl)
+# Loading work.s_box(rtl)
+# Loading work.diffusion_32_l(rtl)
+# Loading work.l(rtl)
+# Error loading design
+# End time: 00:02:38 on Mar 03,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# Compile of final_RoadRunneR.vhd was successful.
+vsim -gui work.roadrunner_tb
+# vsim -gui work.roadrunner_tb 
+# Start time: 00:04:39 on Mar 03,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.roadrunner_tb(sim)
+# Loading ieee.numeric_std(body)
+# Loading work.final_roadrunner(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.f(rtl)
+# Loading work.slk(rtl)
+# Loading work.s_box_32(rtl)
+# Loading work.s_box(rtl)
+# Loading work.diffusion_32_l(rtl)
+# Loading work.l(rtl)
+# ** Warning: (vsim-8683) Uninitialized out port /roadrunner_tb/rrr_tb/busy has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /roadrunner_tb/rrr_tb/key_ready has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /roadrunner_tb/rrr_tb/finish has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position insertpoint  \
+sim:/roadrunner_tb/clk \
+sim:/roadrunner_tb/rst \
+sim:/roadrunner_tb/new_key \
+sim:/roadrunner_tb/new_data \
+sim:/roadrunner_tb/enc_dec \
+sim:/roadrunner_tb/plaintext \
+sim:/roadrunner_tb/ciphertext \
+sim:/roadrunner_tb/key \
+sim:/roadrunner_tb/busy \
+sim:/roadrunner_tb/key_ready \
+sim:/roadrunner_tb/finish \
+sim:/roadrunner_tb/clk_t
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: Sim Ended
+#    Time: 167500 ps  Iteration: 0  Instance: /roadrunner_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of final_RoadRunneR.vhd was successful.
+restart -f
+# Loading work.final_roadrunner(rtl)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: Sim Ended
+#    Time: 167500 ps  Iteration: 0  Instance: /roadrunner_tb
+run
+# WARNING: No extended dataflow license exists
+quit -sim
+# End time: 00:13:17 on Mar 03,2022, Elapsed time: 0:08:38
+# Errors: 0, Warnings: 1
+vsim -gui work.final_roadrunner
+# vsim -gui work.final_roadrunner 
+# Start time: 00:13:30 on Mar 03,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.final_roadrunner(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.f(rtl)
+# Loading work.slk(rtl)
+# Loading work.s_box_32(rtl)
+# Loading work.s_box(rtl)
+# Loading work.diffusion_32_l(rtl)
+# Loading work.l(rtl)
+# WARNING: No extended dataflow license exists
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart -f
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+run
+run
+run
+restart -f
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+run
+run
+run
+run
+quit -sim
+vsim -gui work.fsm
+# End time: 00:30:33 on Mar 03,2022, Elapsed time: 0:17:03
+# Errors: 0, Warnings: 1
+# vsim -gui work.fsm 
+# Start time: 00:30:33 on Mar 03,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fsm(rtl)
+add wave -position insertpoint  \
+sim:/fsm/clk \
+sim:/fsm/rst \
+sim:/fsm/new_data \
+sim:/fsm/new_key \
+sim:/fsm/enc_dec \
+sim:/fsm/en_ent \
+sim:/fsm/sel_in \
+sim:/fsm/rd \
+sim:/fsm/rw \
+sim:/fsm/init \
+sim:/fsm/r1 \
+sim:/fsm/r2 \
+sim:/fsm/sel_out \
+sim:/fsm/key_ready \
+sim:/fsm/finish_end \
+sim:/fsm/busy \
+sim:/fsm/curr_state \
+sim:/fsm/next_state
+force -freeze sim:/fsm/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/fsm/rst 1 0
+run
+force -freeze sim:/fsm/rst 0 0
+force -freeze sim:/fsm/new_data 1 0
+force -freeze sim:/fsm/new_key 10 0
+# ** Error: (vsim-4026) Value "10" does not represent a literal of the enumeration type.
+# ** Error: (vsim-4011) Invalid force value: 10 0.
+# 
+force -freeze sim:/fsm/enc_dec 1 0
+force -freeze sim:/fsm/new_key 1 0
+run
+run
+run
+run
+run
+# WARNING: No extended dataflow license exists
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+quit -sim
+quit -sim
+# End time: 00:42:44 on Mar 03,2022, Elapsed time: 0:12:11
+# Errors: 41, Warnings: 1
+vsim -gui work.final_roadrunner
+# vsim -gui work.final_roadrunner 
+# Start time: 00:42:52 on Mar 03,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.final_roadrunner(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.f(rtl)
+# Loading work.slk(rtl)
+# Loading work.s_box_32(rtl)
+# Loading work.s_box(rtl)
+# Loading work.diffusion_32_l(rtl)
+# Loading work.l(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart -f
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of final_RoadRunneR.vhd was successful.
+# Compile of RAM .vhd was successful.
+restart -f
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of RAM .vhd failed with 3 errors.
+# Compile of RAM .vhd was successful.
+# Compile of final_RoadRunneR.vhd was successful.
+restart -f
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# WARNING: No extended dataflow license exists
+# Compile of RAM .vhd failed with 2 errors.
+# Compile of RAM .vhd was successful.
+restart -f
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Fatal: (vsim-3734) Index value 12 is out of range 11 downto 0.
+#    Time: 1700 ps  Iteration: 1  Process: /final_roadrunner/ram_i/key_pro File: C:/Users/pc/Desktop/Rodrunner/RAM .vhd
+# Fatal error in Process key_pro at C:/Users/pc/Desktop/Rodrunner/RAM .vhd line 77
+# 
+# HDL call sequence:
+# Stopped at C:/Users/pc/Desktop/Rodrunner/RAM .vhd 77 Process key_pro
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/pc/Desktop/Rodrunner/RAM .vhd 77 Process key_pro
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/pc/Desktop/Rodrunner/RAM .vhd 77 Process key_pro
+# 
+# Compile of RAM .vhd was successful.
+# Compile of FSM.vhd was successful.
+restart -f
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart -f
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# WARNING: No extended dataflow license exists
+# Compile of RoadRunneR_cipher.vhd was successful.
+# Compile of RoadRunneR_cipher.vhd was successful.
+restart -f
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of RoadRunneR_cipher.vhd was successful.
+# Compile of RAM .vhd was successful.
+restart -f
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# WARNING: No extended dataflow license exists
+# Compile of FSM.vhd was successful.
+restart -f
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# WARNING: No extended dataflow license exists
+# Compile of FSM.vhd was successful.
+restart -f
+# Loading work.fsm(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart -f
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of FSM.vhd was successful.
+run
+run
+restart -f
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Fatal: (vsim-3734) Index value 12 is out of range 11 downto 0.
+#    Time: 1700 ps  Iteration: 0  Process: /final_roadrunner/ram_i/clock File: C:/Users/pc/Desktop/Rodrunner/RAM .vhd
+# Fatal error in Process clock at C:/Users/pc/Desktop/Rodrunner/RAM .vhd line 71
+# 
+# HDL call sequence:
+# Stopped at C:/Users/pc/Desktop/Rodrunner/RAM .vhd 71 Process clock
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/pc/Desktop/Rodrunner/RAM .vhd 71 Process clock
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/pc/Desktop/Rodrunner/RAM .vhd 71 Process clock
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/pc/Desktop/Rodrunner/RAM .vhd 71 Process clock
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at C:/Users/pc/Desktop/Rodrunner/RAM .vhd 71 Process clock
+# 
+# Compile of FSM.vhd was successful.
+restart -f
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.fsm(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of final_RoadRunneR.vhd was successful.
+# Compile of RAM .vhd was successful.
+restart -f
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of RAM .vhd was successful.
+restart -f
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of RAM .vhd was successful.
+restart -f
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of RoadRunneR_cipher.vhd failed with 2 errors.
+# Compile of RoadRunneR_cipher.vhd failed with 2 errors.
+# Compile of RoadRunneR_cipher.vhd failed with 2 errors.
+# Compile of RoadRunneR_cipher.vhd was successful.
+restart -f
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+
+# WARNING: No extended dataflow license exists
+# Compile of RoadRunneR_cipher.vhd failed with 4 errors.
+# Compile of RoadRunneR_cipher.vhd was successful.
+restart -f
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+
+run
+run
+run
+run
+run
+# Compile of RoadRunneR_cipher.vhd was successful.
+restart -f
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+
+run
+run
+run
+run
+run
+run
+restart -f
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+
+run
+run
+run
+run
+run
+run
+# Compile of RoadRunneR_cipher.vhd was successful.
+restart -f
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+
+run
+run
+run
+run
+run
+run
+# WARNING: No extended dataflow license exists
+# Compile of RoadRunneR_cipher.vhd was successful.
+out_reg
+# invalid command name "out_reg"
+restart -f
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"5a74fe370d3be970\" 0
+force -freeze sim:/final_roadrunner/key x\"79c4294f7f9e9eec8da24b4b7b0c805d\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+
+run
+run
+run
+run
+run
+run
+restart -f
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"0123456789abcdef\" 0
+force -freeze sim:/final_roadrunner/key x\"f6782341f67012950123456789abcdef\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+
+run
+run
+run
+run
+run
+run
+# Compile of RoadRunneR_cipher.vhd failed with 3 errors.
+# Compile of RoadRunneR_cipher.vhd failed with 3 errors.
+# Compile of RoadRunneR_cipher.vhd was successful.
+restart -f
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"0123456789abcdef\" 0
+force -freeze sim:/final_roadrunner/key x\"f6782341f67012950123456789abcdef\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+
+run
+run
+run
+run
+run
+# Compile of RoadRunneR_cipher.vhd was successful.
+restart -f
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"0123456789abcdef\" 0
+force -freeze sim:/final_roadrunner/key x\"f6782341f67012950123456789abcdef\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+
+run
+run
+run
+run
+run
+# Compile of FSM.vhd was successful.
+restart -f
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"0123456789abcdef\" 0
+force -freeze sim:/final_roadrunner/key x\"f6782341f67012950123456789abcdef\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+
+run
+run
+run
+run
+run
+# Compile of FSM.vhd failed with 2 errors.
+# Compile of FSM.vhd failed with 2 errors.
+# Compile of FSM.vhd failed with 1 errors.
+# Compile of FSM.vhd failed with 1 errors.
+# Compile of FSM.vhd was successful.
+restart -f
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"0123456789abcdef\" 0
+force -freeze sim:/final_roadrunner/key x\"f6782341f67012950123456789abcdef\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+
+run
+run
+run
+run
+run
+run
+# WARNING: No extended dataflow license exists
+# Compile of FSM.vhd was successful.
+restart -f
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.fsm(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"0123456789abcdef\" 0
+force -freeze sim:/final_roadrunner/key x\"f6782341f67012950123456789abcdef\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+
+run
+run
+run
+run
+run
+run
+# Compile of FSM.vhd was successful.
+restart -f
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.fsm(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"0123456789abcdef\" 0
+force -freeze sim:/final_roadrunner/key x\"f6782341f67012950123456789abcdef\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+
+run
+run
+run
+run
+run
+run
+restart -f
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"0000000000000000\" 0
+force -freeze sim:/final_roadrunner/key x\"00000000000000000000000000000000\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+
+run
+run
+run
+run
+run
+run
+restart -f
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+run
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.roadrunner_cipher(rtl)
+# Loading work.final_roadrunner(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"0000000000000002\" 0
+force -freeze sim:/final_roadrunner/key x\"80000000000000000000000000000000\" 0
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+
+restart -f
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"0000000000000002\" 0
+force -freeze sim:/final_roadrunner/key x\"80000000000000000000000000000000\" 0
+run
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+
+# Compile of RAM .vhd was successful.
+restart -f
+# Loading work.ram(rtl)
+# Loading work.mux2to1(rtl)
+# Loading work.ram(rtl)
+# Loading work.fsm(rtl)
+# Loading work.ram(rtl)
+force -freeze sim:/final_roadrunner/clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/final_roadrunner/rst 1 0
+force -freeze sim:/final_roadrunner/plaintext x\"0000000000000002\" 0
+force -freeze sim:/final_roadrunner/key x\"80000000000000000000000000000000\" 0
+run
+force -freeze sim:/final_roadrunner/new_key 1 0
+force -freeze sim:/final_roadrunner/new_data 1 0
+force -freeze sim:/final_roadrunner/enc_dec 1 0
+
+run
+force -freeze sim:/final_roadrunner/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+
+quit -sim
+# End time: 02:57:53 on Mar 03,2022, Elapsed time: 2:15:01
+# Errors: 9, Warnings: 7
